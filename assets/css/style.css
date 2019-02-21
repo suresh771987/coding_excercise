@@ -1,0 +1,10 @@
+.input-txt,.output-txt {
+  width: 50%;
+  float: left;
+}
+
+@media (max-width: 767px) {
+  .input-txt,.output-txt {
+    width: 100%;
+  }
+}

@@ -1,0 +1,27 @@
+
+coding_excercise.text_manipulation_form:
+  path: '/coding-excercise/text-manipulation'
+  defaults:
+    _form: '\Drupal\coding_excercise\Form\TextManipulationForm'
+    _title: 'Text Manipulation Form'
+  requirements:
+    _permission: 'access text manipulation form'
+
+coding_excercise.text_manipulation_config_form:
+  path: '/admin/config/coding_excercise/textmanipulationconfig'
+  defaults:
+    _form: '\Drupal\coding_excercise\Form\TextManipulationConfigForm'
+    _title: 'TextManipulationConfigForm'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE
+
+
+coding_excercise.default_form:
+  path: '/coding_excercise/form/default'
+  defaults:
+    _form: '\Drupal\coding_excercise\Form\DefaultForm'
+    _title: 'DefaultForm'
+  requirements:
+    _access: 'TRUE'

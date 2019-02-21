@@ -1,0 +1,5 @@
+name: 'Coding Excercise'
+type: module
+description: 'Module to exhibit coding standard by creating a custom form.'
+core: 8.x
+package: 'Custom'

@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Contains coding_excercise.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function coding_excercise_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the coding_excercise module.
+    case 'help.page.coding_excercise':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Module to exhibit coding standard by creating a custom form.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function coding_excercise_theme() {
+  return [
+    'coding_excercise' => [
+      'variables' => [
+        'inputText' => NULL,
+        'outputText' => NULL,
+      ],
+    ],
+  ];
+}

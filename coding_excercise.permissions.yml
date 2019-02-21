@@ -1,0 +1,5 @@
+
+access text manipulation form:
+  title: 'Access Text manipulation form.'
+  description: 'Allow user can access to the text manipulation form.'
+  restrict access: true
